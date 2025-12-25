@@ -1,0 +1,76 @@
+<!doctype html>
+<h2>Memory Mode</h2>
+<div class="card">
+<div class="flashcard-creator">
+<input id="fc-front" placeholder="Front (word/question)" />
+<input id="fc-back" placeholder="Back (meaning/answer)" />
+<button id="add-flashcard">Add Flashcard</button>
+</div>
+<hr />
+<div class="flashcard-area">
+<button id="next-card">Show Next Due Card</button>
+<div id="card-display" class="card-display hidden">
+<div id="card-front" class="card-face"></div>
+<button id="reveal-card">Reveal</button>
+<div id="card-back" class="card-face hidden"></div>
+<div class="card-actions hidden" id="card-actions">
+<button data-action="again">Again</button>
+<button data-action="good">Good</button>
+<button data-action="easy">Easy</button>
+</div>
+</div>
+</div>
+<p class="note">Memory uses Active Recall + Spaced Repetition (1,3,7,14 days). Cards saved locally.</p>
+</div>
+</section>
+
+
+<section class="pane hidden" id="deep" data-pane>
+<h2>Deep Mode</h2>
+<div class="card">
+<label>Feynman Explain (explain in simple words):</label>
+<textarea id="feynman-text" placeholder="Explain the concept as if teaching a beginner..."></textarea>
+<button id="analyze-feynman">Analyze Explanation</button>
+<div id="feynman-feedback" class="feedback"></div>
+<hr />
+<label>Mindmap (simple nodes)</label>
+<div class="mindmap-controls">
+<input id="mm-node" placeholder="Node text" />
+<select id="mm-parent">
+<option value="root">(root)</option>
+</select>
+<button id="mm-add">Add Node</button>
+</div>
+<div id="mindmap" class="mindmap"></div>
+<p class="note">Use simple explanations and connect ideas. The mindmap is a lightweight organizer.</p>
+</div>
+</section>
+
+
+<section class="pane hidden" id="reflection" data-pane>
+<h2>Reflection Mode</h2>
+<div class="card">
+<label>What did you learn today?</label>
+<textarea id="ref-learn" placeholder="Short notes..."></textarea>
+<label>What was difficult?</label>
+<textarea id="ref-diff" placeholder="Problems / unclear points..."></textarea>
+<label>What will you study next?</label>
+<input id="ref-next" placeholder="Next study task" />
+<button id="save-reflection">Save Reflection</button>
+<hr />
+<h3>Weekly Summary</h3>
+<div id="weekly-summary"></div>
+</div>
+</section>
+</main>
+
+
+<footer class="footer">
+<small>Study Mode 167 — Minimal MVP • Blue theme</small>
+</footer>
+</div>
+
+
+<script src="app.js"></script>
+</body>
+</html>
