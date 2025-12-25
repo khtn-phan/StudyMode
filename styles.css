@@ -42,6 +42,3 @@ textarea{min-height:80px}
 
 
 @media (max-width:800px){.main{grid-template-columns:1fr}.modes{flex-direction:row;overflow:auto}.mode-btn{min-width:140px}}
-
-
-==== app.js ====
